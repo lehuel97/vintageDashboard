@@ -34,6 +34,7 @@ class ContentRowProduct extends Component {
           let category = result[2].meta;
           let brand = result[3].meta;
 
+
                 this.setState({
                     metrics: [
                         {

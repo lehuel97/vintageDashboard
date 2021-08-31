@@ -13,9 +13,10 @@ function TableProductByBrand(){
         <React.Fragment>
             <BigPanel title={"Listado de productos por marca"} key='productsPanel'>
                 <Table heads={[
-                  {prop: 'brand', title: 'Marca'}
+                  {prop: 'name', title: 'Marca'},
+                  {prop: 'lengthProducts', title: 'Total'}
                 ]} 
-                fetch={'http://localhost:3000/api/v1/productos'}
+                fetch={'http://localhost:3001/api/v1/productos/brands'}
                 key={'products'}
                 />
             </BigPanel>
